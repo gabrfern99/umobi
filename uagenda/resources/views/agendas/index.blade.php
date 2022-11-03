@@ -25,7 +25,7 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>S. No</th>
+                    <th>ID</th>
                     <th>Nome</th>
                     <th>Telefone</th>
                     <th width="280px">Action</th>
