@@ -38,7 +38,7 @@
                         <td>{{ $agenda->nome }}</td>
                         <td>{{ $agenda->telefone }}</td>
                         <td>
-                            <form action="{{ route('agendas.destroy',$agenda->id) }}" method="Post">
+                            <form action="{{ route('agendas.destroy',$agenda->id) }}" method="POST">
                                 <a class="btn btn-primary" href="{{ route('agendas.edit', $agenda->id) }}">Edit</a>
                                 @csrf
                                 @method('DELETE')
