@@ -25,14 +25,14 @@
             {{ session('status') }}
         </div>
         @endif
-        <form action="{{ route('agendas.update', $agenda->id) }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('agendas.update', $Agenda->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Nome:</strong>
-                        <input type="text" name="nome" value="{{ $agenda->nome }}" class="form-control"
+                        <input type="text" name="nome" value="{{ $Agenda->nome }}" class="form-control"
                             placeholder="John Doe">
                         @error('nome')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
@@ -43,7 +43,7 @@
                     <div class="form-group">
                         <strong>Telefone:</strong>
                         <input name="telefone" class="form-control" placeholder="62999588244"
-                            value="{{ $agenda->telefone }}">
+                            value="{{ $Agenda->telefone }}">
                         @error('telefone')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                         @enderror
