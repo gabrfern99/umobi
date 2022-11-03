@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Edit Agenda Form - Laravel 9</title>
+    <title>Edit Agenda - Laravel 9</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
@@ -31,9 +31,9 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Agenda Nome:</strong>
+                        <strong>Nome:</strong>
                         <input type="text" name="nome" value="{{ $agenda->nome }}" class="form-control"
-                            placeholder="Agenda nome">
+                            placeholder="John Doe">
                         @error('nome')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                         @enderror
@@ -41,8 +41,8 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Agenda Telefone:</strong>
-                        <input name="telefone" class="form-control" placeholder="Agenda Telefone"
+                        <strong>Telefone:</strong>
+                        <input name="telefone" class="form-control" placeholder="62999588244"
                             value="{{ $agenda->telefone }}">
                         @error('telefone')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>

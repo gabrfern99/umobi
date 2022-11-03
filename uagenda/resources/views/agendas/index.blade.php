@@ -13,7 +13,7 @@
                     <h2>Laravel 9 Agenda</h2>
                 </div>
                 <div class="pull-right mb-2">
-                    <a class="btn btn-success" href="{{ route('agendas.create') }}"> Create Company</a>
+                    <a class="btn btn-success" href="{{ route('agendas.create') }}"> Create agenda</a>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
                         <td>{{ $agenda->telefone }}</td>
                         <td>
                             <form action="{{ route('agendas.destroy',$agenda->id) }}" method="Post">
-                                <a class="btn btn-primary" href="{{ route('agendas.edit',$agenda->id) }}">Edit</a>
+                                <a class="btn btn-primary" href="{{ route('agendas.edit', $agenda->id) }}">Edit</a>
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Delete</button>
